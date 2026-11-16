@@ -1,0 +1,91 @@
+:root,
+[data-theme='light'] {
+  --bg-main: #ffffff;
+  --bg-sidebar: #f3f4f7;
+  --bg-hover: rgba(20, 30, 50, 0.045);
+  --bg-active: #e1e5ec;
+  --bg-card: #ffffff;
+  --bg-popover: #ffffff;
+  --bg-input: rgba(20, 30, 50, 0.05);
+  --text: #1d2026;
+  --text-2: #6c717c;
+  --text-3: #a7acb5;
+  --border: #e6e8ec;
+  --checkbox: #b9bec7;
+  --accent: #1f87f0;
+  --danger: #e5484d;
+  --card-shadow: 0 0 0 1px rgba(20, 30, 50, 0.06), 0 8px 28px rgba(20, 30, 50, 0.12);
+  --popover-shadow: 0 0 0 1px rgba(20, 30, 50, 0.08), 0 12px 32px rgba(20, 30, 50, 0.16);
+
+  --c-inbox: #1f87f0;
+  --c-today: #f6c026;
+  --c-upcoming: #ef4a5f;
+  --c-anytime: #36b5a2;
+  --c-someday: #c3a46f;
+  --c-logbook: #59b25c;
+  --c-project: #4a90e2;
+
+  color-scheme: light;
+}
+
+/* Evening (not pitch-black) dark theme */
+[data-theme='dark'] {
+  --bg-main: #272b34;
+  --bg-sidebar: #20232b;
+  --bg-hover: rgba(255, 255, 255, 0.05);
+  --bg-active: #353a46;
+  --bg-card: #30353f;
+  --bg-popover: #353a45;
+  --bg-input: rgba(255, 255, 255, 0.06);
+  --text: #e3e6ec;
+  --text-2: #9ca3b0;
+  --text-3: #686f7d;
+  --border: #363b47;
+  --checkbox: #5f6676;
+  --accent: #4ba3f7;
+  --danger: #f2686c;
+  --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --popover-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07), 0 14px 36px rgba(0, 0, 0, 0.45);
+
+  --c-project: #6aa8ef;
+
+  color-scheme: dark;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--text);
+  background: var(--bg-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
